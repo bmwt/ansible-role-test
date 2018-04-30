@@ -1,0 +1,5 @@
+# tasks file for test
+   - name: copy test file
+     copy: src="{{ item.src }}" dest="{{ item.dest }}"
+     with_items:
+     - { src: 'files/hailbrak', dest: '/tmp/hailbrak' }
